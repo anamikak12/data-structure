@@ -28,7 +28,7 @@ case 3: display();
 case 4: exit(0);
 }
 }while(9);
-}
+}//function to insert item
 void enqueue(int x)
 {
 int temp;
@@ -41,7 +41,7 @@ rear=temp;
 queue[rear]=x;
 }
 return;
-}
+}//function to delete item
 int dequeue()
 {
 if(front==rear)
@@ -54,7 +54,7 @@ if(front==rear)
  front=(front+1)%SIZE;
  return queue[front];
  }
- }
+ }//function to display item
  void display()
  {
  int i;
