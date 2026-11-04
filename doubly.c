@@ -57,7 +57,7 @@ t->right=s;
 if(s!=0)
 s->left=t;
 return t;
-}
+}//function to display an item
 void display(struct node *s)
 {
 if(s==0)
@@ -73,13 +73,13 @@ s=s->right;
 }
 printf("\n");
 return ;
-}
+}//function to search an item
 struct node* search(struct node*s,int data)
 {
 while(s!=0 && data != s-> data)
 s=s->right;
 return s;
-}
+}//function to delete an item
 struct node* delete(struct node*s,int data)
 {
 struct node *t;
