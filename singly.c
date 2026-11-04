@@ -48,7 +48,7 @@ exit(0);
 break;
 }}
 return 0;
-}
+}//function to push an item
 struct node *push(struct node *sp,int data)
 {
 struct node *temp;
@@ -57,7 +57,7 @@ temp->data=data;
 temp->next=sp;
 sp=temp;
 return sp;
-}
+}//function to pop an item
 struct node *pop(struct node *sp,int *x)
 {
 struct node *temp;
@@ -69,7 +69,7 @@ sp=sp->next;
 free(temp);
 }
 return sp;
-}
+}//function tom display an item
 void display(struct node *sp)
 {
 if(sp==NULL)
@@ -83,7 +83,7 @@ while(sp!=NULL)
 printf("%d\n",sp->data);
 sp=sp->next;
 }
-}
+}//function to search an item
 int search(struct node *sp,int data)
 {
 while(sp!=NULL)
